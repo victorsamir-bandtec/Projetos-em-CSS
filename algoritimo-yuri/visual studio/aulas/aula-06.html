@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fala_coisa_boa()" , style="float: left;">
+        falar 1 coisa boa
+    </button>
+    <div style="float: left; width: 10px;"> <br></div>
+    <button onclick="fala_coisa_ruim()" , style="float: left;">
+        falar coisa ruim!!!
+    </button>
+    <div style="float: left; width: 10px;"><br></div>
+    <button onclick="fala_3_verdades()" , style="float: left;">
+        falar 3 verdades
+    </button>
+    <div style="float: left; width: 10px;"><br></div>
+        
+    <div id="div_mensagem">
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    function fala_coisa_boa() {
+        //alert('quem acredita sempre alcança!');
+        div_mensagem.innerHTML = 'quem acredita sempre alcança!';
+    }
+
+    function fala_coisa_ruim() {
+       // alert('voce partiu meu coração, ai meu coração!');
+        div_mensagem.innerHTML = 'voce partiu meu coração, ai meu coração!!';
+    }
+
+    function fala_3_verdades() {
+        div_mensagem.innerHTML += '<br><br>samir é meu pato' ;
+        div_mensagem.innerHTML +='<br>yuri o teacher do samir!!';
+        div_mensagem.innerHTML += '<br>hello word!';   
+    }
+</script>

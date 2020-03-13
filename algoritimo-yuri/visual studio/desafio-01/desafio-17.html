@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HISTORIA DE UMA PIZZA</h1>
+    <button onclick="botao_chegada()"> Acabou de chegar</button>
+    <button onclick="botao_um()"> depois de 1 minuto</button>
+    <button onclick="botao_cinco()"> depois de 5 minutos</button>
+    <button onclick="botao_quinze()"> depois de 15 minutos</button>
+    <img id="pizza"
+    src="pizza_inteira.jpg" style="display: none; height: 100px; border-radius: 360px;">
+
+</body>
+
+</html>
+<script>
+    function botao_chegada(){
+        pizza.src = "pizza_inteira.jpg";
+        pizza.style.display = "block";
+    
+    }
+    function botao_um(){
+        pizza.src = "pizza_sem2.png";
+        pizza.style.display = "block"
+    }
+    function botao_cinco(){
+        pizza.src = "pizza_metade.png";
+        pizza.style.display = "block";
+    }
+    function botao_quinze(){
+        pizza.src = "pizza_resto.png";
+        pizza.style.display = "block";
+    }
+</script>

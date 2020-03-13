@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="pessoa_fria()">Pessoa fria</button>
+<button onclick="pessoa_neutra()">Pessoa Neutra</button>
+<button onclick="pessoa_nervosa()">Pessoa Nervosa</button>
+<br>
+<span id="span_padrao">Bom dia, colegas</span>
+</body>
+</html>
+<script>
+    function pessoa_fria(){
+        span_padrao.style.color = "blue"
+    }
+    function pessoa_neutra(){
+        span_padrao.style.color = "grey"
+    }
+    function pessoa_nervosa(){
+        span_padrao.style.color = "red"
+    }
+</script>

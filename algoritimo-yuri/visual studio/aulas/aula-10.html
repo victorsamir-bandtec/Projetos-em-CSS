@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h3, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>calculo dsimples</h3>
+
+    primeiro numero ; <input  type="number" id="n1"><br><br>
+    segundo numero ; <input type="number" id="n2"><br><br>
+    terceiro numero ; <input type="number" id="n3"><br><br>
+    <button onclick="subtrair()">subtrair</button>
+    <button onclick="soma()">soma</button>
+    <button onclick="multiplicar()">multiplicar</button>
+    <button onclick="dividir()">dividir</button>
+    <br><br>
+    <div id="div_resultado"></div>
+    <br><br>
+</body>
+</html>
+<script>
+
+    function soma(){
+     div_resultado.innerHTML = `A soma ente ${n1.value} , ${n2.value} e ${n3.value} é igual a <b>${Number(n1.value) + Number(n2.value) + Number(n3.value)}</b>`;
+ }
+ function subtrair(){
+     div_resultado.innerHTML = `A subtração ente ${n1.value} , ${n2.value} e ${n3.value} é igual a <b>${n1.value - n2.value - n3.value}</b>`;
+ }
+ function multiplicar(){
+     div_resultado.innerHTML = `A multplicação ente ${n1.value} , ${n2.value} e ${n3.value} é igual a <b>${n1.value * n2.value - n3.value}</b>`;
+ }
+ function dividir(){
+     div_resultado.innerHTML = `A divisao ente ${n1.value} , ${n2.value} e  é i${n3.value}gual a <b>${n1.value / n2.value / n3.value}</b>`
+ }
+</script>

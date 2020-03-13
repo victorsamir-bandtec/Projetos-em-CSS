@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   valor da passagem do onibus: <input id="valor_onibus" placeholder="valor do onibus"> <br><br>
+   quantas viagens voce faz por mes? <input id="qnt_viagens" placeholder="quantidade de viagens"><br><br>
+   <button onclick="calculo_vt()">calcular VT </button><br><br>
+
+   <div id="div_mensagem"></div>
+
+</body> 
+</html>
+<script>
+    function calculo_vt(){
+        div_mensagem.innerHTML = `Você vai gastar <u>R$${(valor_onibus.value) * (qnt_viagens.value)}</u> por mês com ônibus`;
+    }
+</script>

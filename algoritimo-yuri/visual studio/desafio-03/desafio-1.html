@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+digite seu peso <br> <input id="peso" type="number" placeholder=" Digite seu peso " autofocus><br><br>
+digite sua altura <br><input id="altura" type="number" placeholder=" Digite sua altura ">   <br><br>
+<button onclick="imc_1()" > calcule seu imc </button> <br><br>
+<div id="re"></div>
+</body>
+</html>
+<script>
+    function imc_1(){
+        var alt = Number(altura.value);
+        var pes = Number(peso.value);
+        var imc = pes / alt ** 2;
+        re.innerHTML = imc.toFixed(2);
+}
+</script>
