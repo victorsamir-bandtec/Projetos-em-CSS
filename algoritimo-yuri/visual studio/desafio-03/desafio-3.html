@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="number" id="numero" placeholder="digite um numero"><br><br>
+        <button onclick="raizqua()">Raiz quadrada</button>
+        <button onclick="raizcu()">Raiz quadrada</button>
+        <div id="res"></div>
+</body>
+</html>
+<script>
+    function raizqua(){
+        var n = Number(numero.value);
+        var raizq = n ** (1/2);
+        res.innerHTML = `a raiz quadrada de ${numero.value} é igual a ${raizq}`;
+    }
+    function raizcu(){
+        var n = Number(numero.value);
+        var raizcu = n ** (1/3);
+        res.innerHTML = `a raiz quadrada de ${numero.value} é igual a ${raizcu}`;
+    }
+</script>

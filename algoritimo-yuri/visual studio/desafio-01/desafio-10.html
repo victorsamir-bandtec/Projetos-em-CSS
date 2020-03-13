@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="pare_aqui()">Pare</button>
+    <button onclick="pense_aqui()">Pense</button>
+    <button onclick="siga_aqui()">Siga</button>
+    <span id="span_pare" style="display: none; background-color: red;color: white;">
+        Pare e aguarde
+    </span>
+
+    <span id="span_pense" style="display: none; background-color: black;color: yellow;">
+        Pense se pode seguir ou fcar parado
+    </span>
+
+    <span id="span_siga" style="display: none; background-color: white;color:green;">
+        Pode seguir adiante
+    </span>
+</body>
+</html>
+<script>
+    function pare_aqui(){
+       span_pare.style.display = 'block';
+       span_pense.style.display = 'none';
+       span_siga.style.display = 'none';
+    }
+    function pense_aqui(){
+        span_pare.style.display = 'none';
+       span_pense.style.display = 'block';
+       span_siga.style.display = 'none';
+    }
+    function siga_aqui(){
+        span_pare.style.display = 'none';
+       span_pense.style.display = 'none';
+       span_siga.style.display = 'block';
+    }
+</script>

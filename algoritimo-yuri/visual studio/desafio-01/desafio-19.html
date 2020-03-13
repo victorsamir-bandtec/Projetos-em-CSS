@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="float:left;">ki super sayajin</h1>
+    <br><br>
+    <button onclick="ki_ssj()">trasnsformar em SSJ1 </button>
+    <button onclick="ki_ssj2()">trasnsformar em SSJ2</button>
+    <button onclick="ki_ssj3()">trasnsformar em SSJ3</button>
+    <button onclick="ki_base1()">voltar para a forma base</button>
+    <br><br><br><br><br>
+    <div id="ki_base" > ki base do guerreiro Sayajin: 2000</div>
+</body>
+
+</html>
+<script>
+    function ki_base1(){
+        ki_base.innerHTML = "ki base do guerreiro Sayajin: 2000";
+        ki_base.style.color = "black";
+    }
+    function ki_ssj() {
+        ki_base.innerHTML = "ki na forma SSJ: 100000";
+        ki_base.style.color = "blue";
+    }
+    function ki_ssj2() {
+       ki_base.innerHTML = "ki na forma SSJ2: 200000";
+       ki_base.style.color = "yellow";
+     //ki_base.style.background-color = "blue";
+      
+    }
+    function ki_ssj3() {
+        ki_base.innerHTML = "ki na forma SSJ: 400000";
+        ki_base.style.color = "orange";
+        //ki_base.style.background-color = "yellow";
+    }
+
+</script>

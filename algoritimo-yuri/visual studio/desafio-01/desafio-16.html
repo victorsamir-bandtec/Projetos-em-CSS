@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>O que faz um triatleta?</h1>
+    <br>
+    <button onclick="nada_aqui()">nada</button>
+    <button onclick="corre_aqui()">corre</button>
+    <button onclick="pedala_aqui()">pedala</button>
+    <br><br>
+    <img id="tri_atleta"
+        src="correr.png"
+        style="height: 100px;">
+</body>
+
+</html>
+<script>
+    function nada_aqui() {
+        tri_atleta.src = "nadar.jpg";
+    }
+    function corre_aqui() {
+        tri_atleta.src = "correr.png";
+    }
+    function pedala_aqui() {
+        tri_atleta.src = "bike.jpg";
+    }
+</script>

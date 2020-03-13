@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 03 - q11</title>
+</head>
+<body>
+    <h2>Lista 03 - q11</h2>
+
+    Qual o ki base? <input id="ki_base"> <br>
+    
+    <h3>Transformar em...</h3>
+
+    <button onclick="transformar_ssj()">
+        SSJ
+    </button>
+    <button onclick="transformar_ssj2()">
+        SSJ2
+    </button>
+    <button onclick="transformar_ssj3()">
+        SSJ3
+    </button>    
+
+    <br>
+    <div id="div_resultado" style="display: none;">
+        Após se transformar em <u id="u_forma"></u>, 
+        o ki desse Sayajin passa a ser de <u id="u_ki"></u>
+    </div>
+</body>
+</html>
+<script>
+    function transformar_ssj() {
+        div_resultado.style.display = 'block';
+        u_forma.innerHTML = 'SSJ';
+        u_ki.innerHTML = ki_base.value * 50;
+    }
+
+    function transformar_ssj2() {
+        div_resultado.style.display = 'block';
+        u_forma.innerHTML = 'SSJ2';
+        u_ki.innerHTML = ki_base.value * 100;
+    }
+
+    function transformar_ssj3() {
+        div_resultado.style.display = 'block';
+        u_forma.innerHTML = 'SSJ3';
+        u_ki.innerHTML = ki_base.value * 200;
+    }    
+</script>

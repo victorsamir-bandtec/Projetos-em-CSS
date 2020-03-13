@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+qual tipo de pizza voce deseja <input type="text" id="sabor_pizza" placeholder="sabor da pizza"><br><br>
+qual é o valor da pizza <input type="text" id="valor_pizza" placeholder="valor da pizza"><br><br>
+quantas pessoas irao comer <input type="text" id="qnt_pessoas" placeholder="quantidade de pessoas"><br><br>
+<button onclick="calculo_pessoa()">Valor por pessoa</button><br><br>
+<div id="div_mensagem"></div><br><br>
+</body>
+</html>
+<script>
+    function calculo_pessoa(){
+        div_mensagem.innerHTML = `Cada amigo vai colaborar com <u>R$${(valor_pizza.value) / (qnt_pessoas.value)}</u> para a pizza de ${sabor_pizza.value} `
+
+    }
+</script>

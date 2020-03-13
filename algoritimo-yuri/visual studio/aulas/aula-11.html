@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="numero" type="number" placeholder="numero qualquer" autofocus><br><br>
+    <!-- <input id="potencia" type="number" placeholder="potencia qualquer" autofocus><br><br> -->
+    <button onclick="aumentar1()">
+        aumentar 1
+    </button>
+    <button onclick="diminuir1()">
+        diminuir 1
+    </button>
+
+    <button onclick="simples_1()">
+        aumentar simples
+    </button>
+    <br><br>
+    <!-- <button onclick="potencia2()"> -->
+    <!-- elevar ao quadrado -->
+    <!-- diminuir 1 -->
+    <!-- </button> -->
+
+
+    <!-- </button> </button> -->
+
+</body>
+
+</html>
+<script>
+    // function potencia2(){
+    // var p = (potencia.value);
+    // var n = (numero.value);
+    // alert (`O numero ${n} elevado a ${p} é igual a ${n ** p}`) 
+    // }
+    function aumentar1() {
+        var n = Number(numero.value);
+        alert(n += 0);
+    }
+    function diminuir1() {
+        var n = Number(numero.value);
+        alert(n -= 0);
+    }
+    function simples_1() {
+        var n = Number(numero.value);
+        n++;
+        alert(n);
+    }
+</script>

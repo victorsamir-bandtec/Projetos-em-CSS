@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="pare_aqui()">Pare</button>
+    <button onclick="pense_aqui()">Pense</button>
+    <button onclick="siga_aqui()">Siga</button>
+    <span id="span_funcao">
+
+    </span>
+</body>
+</html>
+<script>
+    function pare_aqui(){
+       span_funcao.innerHTML = '<br>Pare e aguarde!'
+    }
+    function pense_aqui(){
+       span_funcao.innerHTML = '<br>Pense se pode seguir ou se deve parar!'
+    }
+    function siga_aqui(){
+       span_funcao.innerHTML = '<br>Pode seguir adiante!'
+    }
+</script>

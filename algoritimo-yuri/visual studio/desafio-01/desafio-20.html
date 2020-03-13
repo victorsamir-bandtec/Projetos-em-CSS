@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="float:left;">ki super sayajin</h1>
+    <button onclick="ki_ssj()">trasnsformar em SSJ1 </button>
+    <button onclick="ki_ssj2()">trasnsformar em SSJ2</button>
+    <button onclick="ki_ssj3()">trasnsformar em SSJ3</button>
+    <button onclick="ki_base1()">voltar para a forma base</button>
+    <br><br><br><br><br>
+    <div id="ki_base" > ki base do guerreiro Sayajin: 2000</div>
+    <img id="goku"
+    src="https://www.urbanarts.com.br/imagens/produtos/157712/0/Ampliada/goku-plano-americano-proximo.jpg" 
+    style="height: 100px;">
+</body>
+
+</html>
+<script>
+    function ki_base1(){
+        ki_base.innerHTML = "ki base do guerreiro Sayajin: 2000";
+        ki_base.style.color = "black";
+        goku.src = "https://www.urbanarts.com.br/imagens/produtos/157712/0/Ampliada/goku-plano-americano-proximo.jpg"
+    }
+    function ki_ssj() {
+        ki_base.innerHTML = "ki na forma SSJ: 100000";
+        ki_base.style.color = "blue";
+        goku.src = "https://i.ya-webdesign.com/images/super-saiyan-goku-png-3.png"
+    }
+    function ki_ssj2() {
+       ki_base.innerHTML = "ki na forma SSJ2: 200000";
+       ki_base.style.color = "yellow";
+     //ki_base.style.background-color = "blue";
+     goku.src = "https://i.pinimg.com/originals/a9/e1/c5/a9e1c5d500c3b186faa411d5fec0d769.png"
+      
+    }
+    function ki_ssj3() {
+        ki_base.innerHTML = "ki na forma SSJ: 400000";
+        ki_base.style.color = "orange";
+        //ki_base.style.background-color = "yellow";
+        goku.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/dcca3ut-5791ba04-dce0-4055-be8e-7910dcbef160.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGNjYTN1dC01NzkxYmEwNC1kY2UwLTQwNTUtYmU4ZS03OTEwZGNiZWYxNjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.8NgVVKEr3yCBI6Rs6kK3LEmHPOqd70TQU4Gaa46vBbg"
+    }
+
+</script>

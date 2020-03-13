@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 03 - questão 05</title>
+</head>
+<body>
+    
+    <input autofocus placeholder="Valor da passagem" 
+    id="passagem">
+    <br>
+    <input placeholder="Quantas viagens p/ mês" 
+    id="viagens">
+
+    <br>
+    <button onclick="calcular()">
+        Calcular VT
+    </button>
+
+    <div id="div_vt" style="display: none;">
+        Você vai gastar <u id="u_vt">X</u> 
+        por mês com ônibus
+    </div>
+
+</body>
+</html>
+<script>
+
+function calcular() {
+
+    var valor_total = Number(passagem.value) * Number(viagens.value);
+
+    u_vt.innerHTML = `R$${valor_total.toFixed(2)}`;    
+    div_vt.style.display = 'block';
+}
+
+</script>

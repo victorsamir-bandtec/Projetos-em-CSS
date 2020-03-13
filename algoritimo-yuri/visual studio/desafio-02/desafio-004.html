@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    nota 1 : <input type="number" placeholder="numero 1" id="n1">
+    nota 2 : <input type="number" placeholder="numero 2" id="n2"><br><br>
+    <button onclick="mediaa()">calcular</button>
+    <div id="med"></div>
+</body>
+</html>
+<script>
+    function mediaa(){
+        var media = (Number(n1.value) + Number(n2.value))/2
+        med.innerHTML = `a media de ${n1.value} e ${n2.value} é igual a ${media}`;
+    }
+</script>
