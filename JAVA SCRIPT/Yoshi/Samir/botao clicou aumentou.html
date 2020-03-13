@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4 yoshi</title>
+</head>
+
+<body>
+
+    <!-- input com botao  
+    <input onclick="aumenta()" type="button" id="btn" value="clika nimim">
+    -->
+
+    <!-- porem funciona com botao tb -->
+    <button onclick="aumenta()">aumenta</button>
+
+    <button onclick="diminui()">diminui</button>
+
+    <!-- isso faz o numero alterar so o numero mudando o 0 q ta fixo -->
+    <div> voce ja clicou <span id="re"></span><strong id="fixo">0</strong> vezes</div>
+
+</body>
+
+</html>
+
+<script>
+    // pego um numero 0 e fico fazendo ele subir
+    var clik = 0;
+    function aumenta() {
+        clik++
+        re.innerHTML = `<strong> ${clik}</strong>`;
+        fixo.style.display = "none"
+    }
+    function diminui() {
+        clik--
+        re.innerHTML = `<strong> ${clik}</strong>`;
+        fixo.style.display = "none"
+    }
+
+</script>
