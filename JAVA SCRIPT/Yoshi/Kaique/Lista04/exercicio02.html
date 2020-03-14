@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite um raio de uma circuferência: <input type="number" placeholder="Raio" id="raio">
+    <button onclick="Calcular()">Calcular Area</button>
+    <div id="res"></div>
+</body>
+<script>
+    var area = 0;
+    function Calcular(){
+        area = 2 * 3.14 * Number(raio.value);
+        res.innerHTML = `A area da circunferencia é de ${area.toFixed(2)}`
+    }
+</script>
+</html>
