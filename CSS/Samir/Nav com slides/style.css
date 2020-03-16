@@ -1,0 +1,166 @@
+
+/* Geral- fundo */
+body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Poppins' ,serif;
+
+    background-color: #0d180a;
+
+    /* background: url(/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+/* Header-branco */
+header{
+    position: relative;
+    max-width: 1200px;
+    
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.753);
+    
+    background-color: rgba(255, 255, 255, 0.925);
+}
+#logo{
+    width: 20px;
+    line-height: 60px;
+    margin-top: 5px;
+    
+    box-sizing: border-box;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+ 
+    color: #2d965c;
+}   
+.menu{
+    /* nav e nav ul */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav - Itens */
+nav ul li a{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    color: black;
+}
+nav ul li a.active{
+    border-radius: 3px;
+    margin-right: 10px;
+    background-color:#2d965c;
+    color: white;
+}
+nav ul li a:hover{
+    border-radius: 3px;
+
+    transition: ease .5s;
+    background-color:#2d965c;
+    color: white;
+}
+
+/* MAIN - medidas da pagina */
+main{
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+/* SLIDES */
+.slides ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 525px;
+
+    overflow: hidden;
+    
+    margin-top: 20px;
+    padding: 0;
+
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.384);
+}
+.slides ul li{
+    position: relative;
+    width: 24.9%;
+    height: 100%;
+    float: left;
+
+    text-align: center;
+    list-style: none;
+    transition: .6s;
+}
+
+/* Passar mouse, slides */
+.slides ul:hover li{
+    width: 13.2%;
+}
+.slides ul li:hover{
+    width: 60%;
+}
+
+/* Texto dos slides */
+.slides ul li .content{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    
+    opacity:0;
+    visibility: hidden;
+    
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+.slides ul li:hover .content{
+    bottom: 0;
+    opacity:1;
+    visibility: visible;
+
+    transition: .5s;
+    transition-delay: .4s;
+}
+
+/* Fotos dos slides */
+.slides ul li:nth-child(1){
+    background-image: url(/2.jpg);
+    background-size: cover;
+    background-position:left;
+}
+.slides ul li:nth-child(2){
+    background-image: url(/3.jpg);
+    background-size: cover;
+    background-position:left;
+}
+.slides ul li:nth-child(3){
+    background-image: url(/4.jpg);
+    background-size: cover;
+    background-position:right;
+}
+.slides ul li:nth-child(4){
+    background-image: url(/5.jpg);
+    background-size: cover;
+    background-position:right;
+}
+
