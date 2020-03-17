@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>animais</h3>
+    <select id="escolhas" onchange="bicho()">
+        <option value="escolha um animal">opicoes</option>
+        <option value="miauu">Gato</option>
+        <option value="muuuu">Vaca</option>
+        <option value="au au">Cachorro</option>
+        <option value="pru pru">Pomba</option>
+    </select>
+</body>
+</html>
+
+<script>
+    function bicho(){
+        alert(escolhas.value);
+    }
+</script>

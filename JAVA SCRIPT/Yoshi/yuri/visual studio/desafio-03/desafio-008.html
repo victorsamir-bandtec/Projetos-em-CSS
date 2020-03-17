@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  type="number" id="salario" placeholder="digite seu salario"><br><br>
+    <button onclick="salario_a()">Calcular Descontos</button>
+    <div id="input"></div>
+</body>
+</html>
+<script>
+    function salario_a(){
+        var inss = salario.value * 0.1;
+        var ir = salario.value * 0.2;
+        var desconto = inss + ir;
+        var atual = salario.value - desconto;
+        input.innerHTML = `INSS: R$ ${inss} <br>
+        IR: R$ ${ir}<br> 
+        seu valor de desconto é de R$ ${desconto}<br>
+        seu salario atual é de R$ ${atual}`
+    }
+</script>
