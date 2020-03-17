@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cidade natal</title>
+</head>
+
+<body>
+
+    <p>qual sua cidade natal ? </p> <input type="text" id="cidade" autofocus>
+    <p>qual sua data de nascimento ? </p> <input type="date" id="nasc" autocomplete="">
+    <button onclick="mostrar_data()">enviar</button> <br><br><br>
+    <div id="re"></div>
+</body>
+
+</html>
+
+<script>
+    function mostrar_data() {
+        const ci = cidade.value;
+        const na = nasc.value;
+
+        re.innerHTML = `sua cidade natal é ${ci}<br> 
+        e voce nasceu em ${na} `;
+    }
+
+
+
+</script>

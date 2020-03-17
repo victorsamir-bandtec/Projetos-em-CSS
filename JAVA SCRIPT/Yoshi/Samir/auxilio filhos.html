@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> auxilio filhos </title>
+</head>
+
+<body>
+
+    <p> Quantos filhos voce tem? </p> <input type="text" id="filhos" autofocus>
+
+    <button onclick="mostrar_auxilio()">calcular auxilio</button> <br><br><br>
+
+    <div id="re"></div>
+    
+</body>
+
+</html>
+
+<script>
+    function mostrar_auxilio() {
+
+        const auxilio = filhos.value * 25;
+
+        re.innerHTML = `Sua quantidade de filhos é <strong>${filhos.value}</strong> <br>
+        <br> e seu auxilio é de <strong>${auxilio.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</strong>`;
+    }
+
+
+
+</script>
