@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="oração"  style="color: red;" >
+        <option value="">- escolha um trecho -</option>
+        <option value="que eu leve o Amor.">-Onde houver Ódio-</option>
+        <option value="que eu leve o Perdão. ">-Onde houver Ofensa-</option>
+        <option value="que eu leve a União. ">-Onde houver Discórdia-</option>
+        <option value="que eu leve a Fé.">-Onde houver Dúvida-</option>
+        <option value="que eu leve a Verdade. ">-Onde houver Erro-</option>
+        <option value="que eu leve a Esperança.">-Onde houver Desespero-</option>
+        <option value="que eu leve a Alegria. ">-Onde houver Tristeza-</option>
+        <option value="que eu leve a Luz! ">-Onde houver Trevas-</option>
+    </select>
+    <button onclick="torcar_aqui()">Revelar boa obra</button>
+    <div id="re"></div>
+</body>
+</html>
+<script>
+    function torcar_aqui(){
+        re.innerHTML = oração.value;
+        re.style.color = "blue";
+    }
+</script>

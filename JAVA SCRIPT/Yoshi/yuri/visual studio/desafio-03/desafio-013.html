@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="usuario" placeholder="quanto tempo voce dorme por dia">
+    <button onclick="calcular()">Calcular Sono</button>
+    <yuri id="yuri"></yuri>
+</body>
+</html>
+<script>
+    function calcular(){
+        yuri.innerHTML = `Ao dormir ${usuario.value} horas, você dormiu:<br>
+    ${usuario.value*0.05.toFixed(2)} horas na fase 1<br>
+    ${usuario.value*0.45.toFixed(2)} horas na fase 2<br>
+    ${usuario.value*0.30.toFixed(2)} horas na fase 3<br>
+    ${usuario.value*0.20.toFixed(2)} horas na fase REM`
+    }
+</script>

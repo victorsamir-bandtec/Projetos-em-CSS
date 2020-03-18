@@ -12,17 +12,21 @@
     <button onclick="ssj2()">SSJ2</button>
     <button onclick="ssj3()">SSJ3</button><br>
     <span id="output"></span>
+    <img id="img" src="">
 
 </body>
 </html>
 <script>
     function ssj(){
         output.innerHTML =` Após se transformar em SSJ, o ki desse Sayajin passa a ser de ${input.value*50}`
+        img.src = "ssj.png";
     }
     function ssj2(){
         output.innerHTML =` Após se transformar em SSJ2, o ki desse Sayajin passa a ser de ${input.value*100}`
+        img.src = "ssj2.png";
     }
     function ssj3(){
         output.innerHTML =` Após se transformar em SSJ3, o ki desse Sayajin passa a ser de ${input.value*200}`
+        img.src = "ssj3.png";
     }
 </script>

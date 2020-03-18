@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    quantidade de votos ze buduia <br>       <input type="number" id="ze">    <br>
+    quantidade de votos maria bigodenha <br> <input type="number" id="maria"> <br>
+    quantidade de votos branco    <br>       <input type="number" id="branco"><br>
+    quantidade de votos nulos     <br>       <input type="number" id="nulo">  <br>
+    <button onclick="eleiçao()">Resultado da Eleição</button><br>
+    <div id="Resultado"></div><br>
+    <div id="d_ze"       style=" background-color: brown;     display:none; height: 20px;"></div><br>
+    <div id="d_maria"    style=" background-color: blue;      display:none; height: 20px;"></div><br>
+    <div id="dinvalido"  style=" background-color: burlywood; display:none; height: 20px;"></div><br>
+</body>
+</html>
+<script>
+    function eleiçao(){
+        var total =             (Number(ze.value)+ Number(maria.value)+ Number(branco.value)+ Number(nulo.value) );
+        var invalido =          (Number(branco.value)+ Number(nulo.value));
+        var ze_porcento =       ((Number(ze.value)/total)*100);
+        var maria_porcento =    ((Number(maria.value)/total)*100);
+        var invalido_porcento = (Number(invalido)/total)*100;
+        Resultado.innerHTML = 
+       `Total de votos: ${total} <br>
+        Zé Ruela: ${ze_porcento.toFixed(2)}% (${ze.value} votos)<br>
+        maria bigordenha: ${maria_porcento.toFixed(2)}% (${maria.value} votos)<br>
+        invalido: ${invalido_porcento.toFixed(2)}% (${invalido} votos)<br>  `
+        d_ze.style.display = "block";
+        d_ze.style.width =  `${ze_porcento.toFixed(2)}%`;
+
+        d_maria.style.display = "block";
+        d_maria.style.width =  `${maria_porcento.toFixed(2)}% `;
+
+        dinvalido.style.display = "block";
+        dinvalido.style.width =  `${invalido_porcento.toFixed(2)}%`
+
+    }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    quantidade de votos ze buduia <input type="number" id="ze">
+    quantidade de votos maria bigodenha <input type="number" id="maria">
+    quantidade de votos branco<input type="number" id="branco">
+    quantidade de votos nulos<input type="number" id="nulo">
+    <button onclick="eleiçao()">Resultado da Eleição</button>
+    <div id="re"></div>
+</body>
+</html>
+<script>
+    function eleiçao(){
+        var total = (Number(ze.value)+ Number(maria.value)+Number(branco.value)+Number(nulo.value) )
+        var invalido = (Number(branco.value)+Number(nulo.value))
+        re.innerHTML = `
+        Total de votos: ${total} <br>
+        Zé Ruela: ${((Number(ze.value)/total)*100).toFixed(2)}% (${ze.value} votos)<br>
+        maria bigordenha: ${((Number(maria.value)/total)*100).toFixed(2)}% (${maria.value} votos)<br>
+        invalido: ${(Number(invalido)/total)*100}% (${invalido} votos)<br>  `
+    }
+</script>
