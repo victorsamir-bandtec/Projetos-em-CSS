@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="pizza" type="text" placeholder="sabor da pizza" autofocus><br>
+    <select id="sabor1">
+        <option value="">sabor</option>
+        <option value="10">queijo</option>
+        <option value="8.3">presunto</option>
+        <option value="5.8">Ovo</option>
+        <option value="7">Palmito</option>
+        <option value="8">Frango</option>
+        <option value="">Catupiry</option>
+    </select>
+    <select id="sabor2">
+        <option value="">sabor</option>
+        <option value="10">queijo</option>
+        <option value="8.3">presunto</option>
+        <option value="5.8">Ovo</option>
+        <option value="7">Palmito</option>
+        <option value="8">Frango</option>
+        <option value="9">Catupiry</option>
+    </select>
+    <select id="sabor3">
+        <option value="">sabor</option>
+        <option value="10">queijo</option>
+        <option value="8.3">presunto</option>
+        <option value="5.8">Ovo</option>
+        <option value="7">Palmito</option>
+        <option value="8">Frango</option>
+        <option value="9">Catupiry</option>
+    </select><br><br>
+    <button onclick="sabores()">calcular preço da pizza</button> <br><br>
+    <div id="re"></div>
+</body>
+</html>
+<script>
+    function sabores(){
+        var valor = (Number(sabor1.value)+ Number(sabor2.value) + Number(sabor3.value))
+        re.innerHTML = `A pizza de <b> ${pizza.value} </b> vai custar um total de <u>R$ ${valor}</u>`
+    }
+</script>
