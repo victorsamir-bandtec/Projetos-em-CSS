@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>condicionais</h1>
+</body>
+
+</html>
+<script>
+  function retornasexo(sexo) {
+    // m ou f
+    // masculino ou feminino
+    // = coloca um valor em
+    // == significa comparação
+    // === verifica se o valor e tipo da variavel é igual
+    if (sexo === 'M') {
+      return 'Masculino';
+    }
+    else if (sexo === 'F') {
+      return 'Feminino';
+    }
+    else {
+      return 'Outro';
+    }
+  }
+  var resultado = retornasexo('F');
+  console.log(resultado);
+
+
+  function retornesexo(sexo) {
+    switch (sexo) {
+      case 'M':
+        return 'Masculino';
+      case 'F':
+        return 'Feminino';
+      default:
+        return 'Outro';
+    }
+  }
+    var resultado = retornesexo('M');
+    console.log(resultado);
+
+
+
+</script>
